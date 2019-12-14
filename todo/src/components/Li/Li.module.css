@@ -1,0 +1,56 @@
+.toDo {
+    display: flex;
+    font-size: 1rem;
+    border-top: 1px solid rgba(0,0,0,.1);
+    background-color: #fff;
+    transition: all .2s;
+    -webkit-user-select: none;
+    user-select: none;
+    padding: 1em;
+    align-items: center;
+}
+.toDo.completed * {
+    color: lightgray;
+}
+.toDo .checkbox {
+    margin-right: .5rem;
+}
+.toDo .textfield {
+    font-family: 'Consolas', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #757575;
+    padding: .5em;
+    border-radius: 2px;
+    border: 1px solid lightgray;
+    outline: none;
+}
+.toDo .title,
+.toDo .textfield {
+    margin-right: auto;
+}
+.toDo.completed .title {
+    text-decoration: line-through;
+}
+.toDo.editing .title {
+    display: none;
+}
+.toDo.editing .textfield {
+    display: block;
+}
+.toDo button {
+    opacity: 0;
+    transition: all .2s;
+}
+.toDo:hover button:not(.checkbox) {
+    opacity: 1;
+}
+.show {
+    display: block;
+}
+.hide {
+    background: red;
+    display: none !important; 
+}
+.opacity {
+    opacity: .5
+}
