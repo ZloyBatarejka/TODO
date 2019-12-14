@@ -1,1 +1,3 @@
-"# TODO /n todo list, add/delete/change items, based on firebase server" 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+TODO List based on firebase server.
