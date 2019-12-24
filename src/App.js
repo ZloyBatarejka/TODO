@@ -1,7 +1,6 @@
-import React from 'react';
-import './App.css';
-import { Form } from "./components/Form/Form"
-import { Route, Switch } from 'react-router-dom'
+import React from "react";
+import { Form } from "./components/Form/Form";
+import { Route, Switch } from "react-router-dom";
 
 function App() {
   return (

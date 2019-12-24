@@ -1,45 +1,42 @@
 .todoForm {
-    display: flex;
-    background-color: #FAFAFA;
-    border-top: 1px solid rgba(0,0,0,.1);
-    padding: 10px;
+  display: flex;
+  background: transparent;
+  padding: 10px;
 }
-
+.title {
+  text-align: center;
+}
 .todoForm .input {
-    flex: 1;
-    outline: none;
-    transition: all .2s;
-    margin-right: 20px;
-    font-family: 'Consolas', Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    color: #757575;
-    padding: .5em;
-    border-radius: 2px;
-    border: 1px solid lightgray;
-    outline: none;
+  flex: 1;
+  outline: none;
+  transition: all 0.2s;
+  margin-right: 20px;
+  font-family: "Consolas", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #757575;
+  padding: 0.5em;
+  border-radius: 2px;
+  border: 1px solid lightgray;
+  outline: none;
 }
 
 .todoForm .input:focus {
-    border: 1px solid #f0db4f;
+  border: 1px solid #d886ec;
 }
 
 .app {
-        color: black;
-        background: #fff;
-        max-width: 700px;
-        min-width: 350px;
-        margin: 70px auto;
-        border-radius: 2px;
-        overflow: hidden;
-        box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
-
+  color: black;
+  background: transparent;
+  max-width: 700px;
+  min-width: 350px;
+  margin: auto;
+  overflow: hidden;
 }
 
 @media (max-width: 600px) {
-    .app {
-        width: 100%;
-        height: 100%;
-        margin: 0px;
-
-    }
+  .app {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
   }
+}
