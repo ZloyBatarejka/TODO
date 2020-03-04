@@ -30,6 +30,7 @@ export class Form extends Component {
       });
     } catch (e) {
       console.log(e);
+      console.log("тест тест");
       console.log("БД на фб упала.(тестовый режим - 30 дней) Нужно обновить");
     }
   }
