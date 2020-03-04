@@ -20,7 +20,10 @@ export class Form extends Component {
       const response = await axios.get(
         "https://todo-eb35e.firebaseio.com/list.json"
       );
-      const responseList = Array.from(Object.entries(response.data));
+      let responseList = [];
+      if (response.data) {
+        responseList = Array.from(Object.entries(response.data));
+      }
       this.setState({
         list: responseList,
         loading: false
